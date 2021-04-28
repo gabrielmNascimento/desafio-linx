@@ -195,7 +195,8 @@ section
     border: 1px solid #707070;
     opacity: 1;
     margin-bottom: 20px;
-    cursor: pointer;
+    cursor: text;
+    outline: none;
 }
 
 .gender-button
@@ -297,23 +298,6 @@ section
     margin-left: 285px;
 }
 
-.line-products
-{
-    width: 100%;
-    height: auto;
-    margin-top: 39px;
-}
-
-.line-products .info-produto:first-child
-{
-    margin-left: 0px;
-}
-
-.line-products .info-produto:last-child
-{
-    margin-right: 0px;
-}
-
 .info-produto
 {
     width: 201px;
@@ -321,7 +305,22 @@ section
 
     display: inline-block;
     opacity: 1;
-    margin: auto 20px auto 17px;
+    margin: 39px 20px auto 20px;
+}
+
+.info-produto:first-child
+{
+    margin-left: 0px;
+}
+
+.info-produto:nth-child(4n + 1)
+{
+    margin-left: 0px;
+}
+
+.info-produto:nth-child(4n)
+{
+    margin-right: 0px;
 }
 
 .image-product
@@ -433,6 +432,7 @@ section
     width: 260px;
     height: 39px;
     margin: 51px auto 140px 620px;
+    cursor: pointer;
 
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
@@ -503,7 +503,18 @@ section
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
-    cursor: pointer;
+    cursor: text;
+    outline:none;
+}
+
+.textbox-form-share:focus:valid
+{
+    border: 2px solid green;  
+}
+
+.textbox-form-share:focus:invalid
+{
+    border: 2px solid red;  
 }
 
 #button-send-friend
