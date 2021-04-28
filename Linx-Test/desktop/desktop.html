@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seleção de Produtos</title>
     <link rel="stylesheet" href="desktop.css">
+    <script src="desktop.js"></script>
 </head>
 <body>
     <header>
@@ -29,305 +30,284 @@
     </header>
 
     <section>
-        <div id="inner-container-section">
 
-            <div id="container-text-form">
-                <h3 id="title-text-form">Ajude o algoritmo a ser mais certeiro</h3>
+        <div id="container-text-form">
+            <h3 id="title-text-form">Ajude o algoritmo a ser mais certeiro</h3>
 
-                <p id="body-text-form">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. 
-                    Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. 
-                    Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. 
-                    Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. 
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                    per inceptos himenaeos. Vestibulum vel urna tortor. 
-                    Vivamus et arcu non felis tristique eleifend. Morbi eu condimentum urna. 
-                    Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, 
-                    pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. 
-                    Quisque ut neque mattis, consequat velit ut, ultrices orci. 
-                    Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. 
-                    Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, 
-                    at mattis augue est vel metus.
-                </p>
+            <p id="body-text-form">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. 
+                Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. 
+                Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. 
+                Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. 
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                per inceptos himenaeos. Vestibulum vel urna tortor. 
+                Vivamus et arcu non felis tristique eleifend. Morbi eu condimentum urna. 
+                Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, 
+                pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. 
+                Quisque ut neque mattis, consequat velit ut, ultrices orci. 
+                Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. 
+                Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, 
+                at mattis augue est vel metus.
+            </p>
+        </div>
+
+        <div id="form">
+
+            <div class="element-label-input">
+                <label class="label-form" for="name">Seu Nome:</label>
+                <input class="textbox-form" type="text" id="name">
             </div>
 
-            <div id="form">
-                <div id="container-form">
-
-                    <div class="element-label-input">
-                        <label class="label-form" for="name">Seu Nome:</label>
-                        <input class="textbox-form" type="text" id="name">
-                    </div>
-
-                    <div class="element-label-input">
-                            <label class="label-form" for="email">E-mail:</label>
-                            <input class="textbox-form" type="text" id="email">
-                    </div>
-
-                    <div class="element-label-input">
-                            <label class="label-form" for="cpf">CPF:</label>
-                            <input class="textbox-form" type="text" id="cpf">
-                    </div>
-
-                    <div class="element-label-input">
-                        <span id="male-button">
-                            <input class="gender-button" type="radio" name="gender" id="male">
-                            <label class="label-gender" for="male">Masculino</label>
-                        </span>
-                        <span id="female-button">
-                            <input class="gender-button" type="radio" name="gender" id="female">
-                            <label class="label-gender" for="female">Feminino</label>
-                        </span>
-                    </div>
-                </div>
+            <div class="element-label-input">
+                    <label class="label-form" for="email">E-mail:</label>
+                    <input class="textbox-form" type="text" id="email">
             </div>
 
-            <button id="form-button">Enviar</button>
-
-            <hr id="divisor-products">
-            <div id="container-title">
-                <h3 id="title-divisor-products">Sua seleção especial</h3>
+            <div class="element-label-input">
+                    <label class="label-form" for="cpf">CPF:</label>
+                    <input class="textbox-form" type="text" id="cpf">
             </div>
 
-            <div id="list-product">
-                <div class="line-products">
+            <div class="element-label-input">
+                <span id="male-button">
+                    <input class="gender-button" type="radio" name="gender" id="male">
+                    <label class="label-gender" for="male">Masculino</label>
+                </span>
+                <span id="female-button">
+                    <input class="gender-button" type="radio" name="gender" id="female">
+                    <label class="label-gender" for="female">Feminino</label>
+                </span>
+            </div>
+        
+        </div>
 
-                    <div class="info-produto">
-                        <div class="image-product">
-                            <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
-                        </div>
-                        <div class="name-product">
-                            <h4>Product Number 0</h4>
-                        </div>
-                        <div class="description-product">
-                            <p>Product long description number 0 just to make more than one like of text.</p>
-                        </div>
-                        <div class="old-price">
-                            <p>De: R$257.00</p>
-                        </div>
-                        <div class="new-price">
-                            <p>Por: R$209.00</p>
-                        </div>
-                        <div class="divided-price">
-                            <p>ou 10x de 20.9</p>
-                        </div>
+        <button id="form-button">Enviar</button>
 
-                        <button class="buy-button">Comprar</button>
+        <hr id="divisor-products" data-content="Sua seleção especial">
+
+        <div id="list-product">
+            <!--<div class="line-products">
+
+                <div class="info-produto">
+                    <div class="image-product">
+                        <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
+                    </div>
+                    <div class="name-product">
+                        <h4>Product Number 0</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>Product long description number 0 just to make more than one like of text.</p>
+                    </div>
+                    <div class="old-price">
+                        <p>De: R$257.00</p>
+                    </div>
+                    <div class="new-price">
+                        <p>Por: R$209.00</p>
+                    </div>
+                    <div class="divided-price">
+                        <p>ou 10x de 20.9</p>
                     </div>
 
-                    <div class="info-produto">
-                        <div class="image-product">
-                            <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
-                        </div>
-                        <div class="name-product">
-                            <h4>Product Number 1</h4>
-                        </div>
-                        <div class="description-product">
-                            <p>Product long description number 1 just to make more than one like of text.</p>
-                        </div>
-                        <div class="old-price">
-                            <p>De: R$402.00</p>
-                        </div>
-                        <div class="new-price">
-                            <p>Por: R$378.00</p>
-                        </div>
-                        <div class="divided-price">
-                            <p>ou 10x de R$37.8</p>
-                        </div>
-
-                        <button class="buy-button">Comprar</button>
-                    </div>
-
-                    <div class="info-produto">
-                        <div class="image-product">
-                            <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
-                        </div>
-                        <div class="name-product">
-                            <h4>Product Number 2</h4>
-                        </div>
-                        <div class="description-product">
-                            <p>Product long description number 2 just to make more than one like of text.</p>
-                        </div>
-                        <div class="old-price">
-                            <p>De: R$268.00</p>
-                        </div>
-                        <div class="new-price">
-                            <p>Por: R$224.00</p>
-                        </div>
-                        <div class="divided-price">
-                            <p>ou 10x de R$22.4</p>
-                        </div>
-
-                        <button class="buy-button">Comprar</button>
-                    </div>
-
-                    <div class="info-produto">
-                        <div class="image-product">
-                            <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
-                        </div>
-                        <div class="name-product">
-                            <h4>Product Number 3</h4>
-                        </div>
-                        <div class="description-product">
-                            <p>Product long description number 3 just to make more than one like of text.</p>
-                        </div>
-                        <div class="old-price">
-                            <p>De: R$322.00</p>
-                        </div>
-                        <div class="new-price">
-                            <p>Por: R$306.00</p>
-                        </div>
-                        <div class="divided-price">
-                            <p>ou 10x de R$30.6</p>
-                        </div>
-
-                        <button class="buy-button">Comprar</button>
-                    </div>
-
+                    <button class="buy-button">Comprar</button>
                 </div>
 
-                <div class="line-products">
-
-                    <div class="info-produto">
-                        <div class="image-product">
-                            <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
-                        </div>
-                        <div class="name-product">
-                            <h4>Product Number 4</h4>
-                        </div>
-                        <div class="description-product">
-                            <p>Product long description number 4 just to make more than one like of text.</p>
-                        </div>
-                        <div class="old-price">
-                            <p>De: R$208.00</p>
-                        </div>
-                        <div class="new-price">
-                            <p>Por: R$184.00</p>
-                        </div>
-                        <div class="divided-price">
-                            <p>ou 10x de R$18.4</p>
-                        </div>
-                            
-                        <button class="buy-button">Comprar</button>
+                <div class="info-produto">
+                    <div class="image-product">
+                        <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
+                    </div>
+                    <div class="name-product">
+                        <h4>Product Number 1</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>Product long description number 1 just to make more than one like of text.</p>
+                    </div>
+                    <div class="old-price">
+                        <p>De: R$402.00</p>
+                    </div>
+                    <div class="new-price">
+                        <p>Por: R$378.00</p>
+                    </div>
+                    <div class="divided-price">
+                        <p>ou 10x de R$37.8</p>
                     </div>
 
-                    <div class="info-produto">
-                        <div class="image-product">
-                            <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
-                        </div>
-                        <div class="name-product">
-                            <h4>Product Number 5</h4>
-                        </div>
-                        <div class="description-product">
-                            <p>Product long description number 5 just to make more than one like of text.</p>
-                        </div>
-                        <div class="old-price">
-                            <p>De: R$232.00</p>
-                        </div>
-                        <div class="new-price">
-                            <p>Por: R$184.00</p>
-                        </div>
-                        <div class="divided-price">
-                            <p>ou 2x de R$18.4</p>
-                        </div>
+                    <button class="buy-button">Comprar</button>
+                </div>
 
-                        <button class="buy-button">Comprar</button>
+                <div class="info-produto">
+                    <div class="image-product">
+                        <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
+                    </div>
+                    <div class="name-product">
+                        <h4>Product Number 2</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>Product long description number 2 just to make more than one like of text.</p>
+                    </div>
+                    <div class="old-price">
+                        <p>De: R$268.00</p>
+                    </div>
+                    <div class="new-price">
+                        <p>Por: R$224.00</p>
+                    </div>
+                    <div class="divided-price">
+                        <p>ou 10x de R$22.4</p>
                     </div>
 
-                    <div class="info-produto">
-                        <div class="image-product">
-                            <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
-                        </div>
-                        <div class="name-product">
-                            <h4>Product Number 6</h4>
-                        </div>
-                        <div class="description-product">
-                            <p>Product long description number 6 just to make more than one like of text.</p>
-                        </div>
-                        <div class="old-price">
-                            <p>De: R$316.00</p>
-                        </div>
-                        <div class="new-price">
-                            <p>Por: R$271.00</p>
-                        </div>
-                        <div class="divided-price">
-                            <p>ou 2x de R$27.1</p>
-                        </div>
+                    <button class="buy-button">Comprar</button>
+                </div>
+
+                <div class="info-produto">
+                    <div class="image-product">
+                        <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
+                    </div>
+                    <div class="name-product">
+                        <h4>Product Number 3</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>Product long description number 3 just to make more than one like of text.</p>
+                    </div>
+                    <div class="old-price">
+                        <p>De: R$322.00</p>
+                    </div>
+                    <div class="new-price">
+                        <p>Por: R$306.00</p>
+                    </div>
+                    <div class="divided-price">
+                        <p>ou 10x de R$30.6</p>
+                    </div>
+
+                    <button class="buy-button">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="line-products">
+
+                <div class="info-produto">
+                    <div class="image-product">
+                        <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
+                    </div>
+                    <div class="name-product">
+                        <h4>Product Number 4</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>Product long description number 4 just to make more than one like of text.</p>
+                    </div>
+                    <div class="old-price">
+                        <p>De: R$208.00</p>
+                    </div>
+                    <div class="new-price">
+                        <p>Por: R$184.00</p>
+                    </div>
+                    <div class="divided-price">
+                        <p>ou 10x de R$18.4</p>
+                    </div>
                         
-                        <button class="buy-button">Comprar</button>
-                    </div>
-
-                    <div class="info-produto">
-                        <div class="image-product">
-                            <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
-                        </div>
-                        <div class="name-product">
-                            <h4>Product Number 7</h4>
-                        </div>
-                        <div class="description-product">
-                            <p>Product long description number 7 just to make more than one like of text.</p>
-                        </div>
-                        <div class="old-price">
-                            <p>De: R$121.00</p>
-                        </div>
-                        <div class="new-price">
-                            <p>Por: R$88.0</p>
-                        </div>
-                        <div class="divided-price">
-                            <p>ou 2x de R$8.8</p>
-                        </div>
-                        
-                        <button class="buy-button">Comprar</button>
-                    </div>
-
-                </div>
-            </div>
-
-            <button id="more-products-button">Ainda mais produtos aqui!</button>
-
-            <hr id="divisor-share">
-            <div id="container-share-title">
-                <h3 id="share-title">Compartilhe a novidade</h3>
-            </div>
-
-            <div id="subtitle-share">
-                <h4>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h4>
-            </div>
-
-            <div id="form-share">
-                <div class="element-form-share">
-                    <div class="label-form-share">
-                        <label for="name-friend">Nome do seu amigo:</label>
-                    </div>
-
-                    <div class="textbox-form-share">
-                        <input type="text" id="name-friend">
-                    </div>
+                    <button class="buy-button">Comprar</button>
                 </div>
 
-                <div class="element-form-share">
-                    <div class="label-form-share">
-                        <label for="email-friend">E-mail:</label>
+                <div class="info-produto">
+                    <div class="image-product">
+                        <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
+                    </div>
+                    <div class="name-product">
+                        <h4>Product Number 5</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>Product long description number 5 just to make more than one like of text.</p>
+                    </div>
+                    <div class="old-price">
+                        <p>De: R$232.00</p>
+                    </div>
+                    <div class="new-price">
+                        <p>Por: R$184.00</p>
+                    </div>
+                    <div class="divided-price">
+                        <p>ou 2x de R$18.4</p>
                     </div>
 
-                    <div class="textbox-form-share">
-                        <input type="text" id="email-friend">
-                    </div>
+                    <button class="buy-button">Comprar</button>
                 </div>
-            </div>
 
-            <div id="bottom-send-friend">
-                <button>Enviar agora</button>
+                <div class="info-produto">
+                    <div class="image-product">
+                        <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
+                    </div>
+                    <div class="name-product">
+                        <h4>Product Number 6</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>Product long description number 6 just to make more than one like of text.</p>
+                    </div>
+                    <div class="old-price">
+                        <p>De: R$316.00</p>
+                    </div>
+                    <div class="new-price">
+                        <p>Por: R$271.00</p>
+                    </div>
+                    <div class="divided-price">
+                        <p>ou 2x de R$27.1</p>
+                    </div>
+                    
+                    <button class="buy-button">Comprar</button>
+                </div>
+
+                <div class="info-produto">
+                    <div class="image-product">
+                        <img src="//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6506376" alt="" width="200px" height="150px">
+                    </div>
+                    <div class="name-product">
+                        <h4>Product Number 7</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>Product long description number 7 just to make more than one like of text.</p>
+                    </div>
+                    <div class="old-price">
+                        <p>De: R$121.00</p>
+                    </div>
+                    <div class="new-price">
+                        <p>Por: R$88.0</p>
+                    </div>
+                    <div class="divided-price">
+                        <p>ou 2x de R$8.8</p>
+                    </div>
+                    
+                    <button class="buy-button">Comprar</button>
+                </div>-->
+
             </div>
         </div>
+
+        <button id="more-products-button">Ainda mais produtos aqui!</button>
+
+        <hr id="divisor-share" data-content="Compartilhe a novidade">
+
+        <h4 id="subtitle-share">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h4>
+
+        <div id="form-share">
+            <div class="element-form-share" style="margin-right: 40px;">
+
+                <label class="label-form-share" for="name-friend">Nome do seu amigo:</label>
+
+                <input class="textbox-form-share" type="text" id="name-friend">
+            </div>
+
+            <div class="element-form-share">
+
+                <label class="label-form-share" for="email-friend">E-mail:</label>
+
+                <input class="textbox-form-share" type="text" id="email-friend">
+            </div>
+        </div>
+
+        <button id="button-send-friend">Enviar agora</button>
     </section>
     <footer>
-        <div class="main-container">
-            <div id="inner-container-footer">
-                <div id="text-footer">
-                    <p>Testando suas habilidades em HTML, CSS e JS. Linx Impulse 2019</p>
-                </div>
-            </div>
+        <img src="https://assets.codepen.io/t-517/divider-triangle.png" class="skewed2" />
+
+        <div id="text-footer">
+            <p>Testando suas habilidades em HTML, CSS e JS.<br>Linx Impulse<br>2019</p>
         </div>
     </footer>
 </body>

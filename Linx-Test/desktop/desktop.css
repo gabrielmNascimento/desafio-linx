@@ -1,7 +1,15 @@
+/**
+{
+    /*To see bugs*//*
+    background: black !important;
+    border: 1px solid red !important;
+    color: green !important;
+}*/
+
 html, body
 {
-    width: 1500px;
-    height: 2444px;
+    min-width: fit-content;
+    height: auto;
     margin: 0px 0px 0px 0px;
 }
 
@@ -9,8 +17,9 @@ html, body
 
 header
 {
-    position: relative;
+    position: static;
     height: 399px;
+    width: 1500px;
     background: #707070 0% 0% no-repeat padding-box;
 }
 
@@ -25,7 +34,7 @@ header
 
 .text-element:first-child
 {
-    position: relative;
+    position: absolute;
     top: 69px;
     left: 635px;
     width: 227px;
@@ -37,8 +46,8 @@ header
 
 .text-element:nth-child(2)
 {
-    position: relative;
-    top: 69px;
+    position: absolute;
+    top: 92px;
     left: 571px;
     width: 358px;
     height: 48px;
@@ -49,8 +58,8 @@ header
 
 .text-element:nth-child(3)
 {
-    position: relative;
-    top: 93px;
+    position: absolute;
+    top: 164px;
     left: 476px;
     width: 548px;
     height: 16px;
@@ -61,8 +70,8 @@ header
 
 #container-buttons-header
 {
-    position: relative;
-    top: 143px;
+    position: absolute;
+    top: 230px;
     left: 371px;
     width: 780px;
     height: 50px;
@@ -99,8 +108,8 @@ header
 
 .skewed
 {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 299px;
     left: 0;
     right: 0;
     width: 100%;
@@ -110,18 +119,24 @@ header
 }
 
 /*------------------------------------------------------SECTION----------------------------------------------*/
+section
+{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
 
 #container-text-form
 {
-    width: 54%;
+    margin-top: 20.97px;
+    margin-left: 290px;
+    width: 520px;
     float: left;
 }
 
 #title-text-form
 {
-    position: relative;
-    top: 0px;
-    left: 290px;
     width: 332px;
     height: 23px;
 
@@ -129,15 +144,12 @@ header
     font: normal normal normal 20px/24px Helvetica Neue;
     letter-spacing: 0px;
     color: #888888;
-    margin-top: 50px;
     opacity: 1;
+    margin: 0px 0px 30px 0px;
 }
 
 #body-text-form
 {
-    position: relative;
-    top: 30px;
-    left: 290px;
     width: 520px;
     height: 220px;
 
@@ -146,26 +158,17 @@ header
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+    margin: 0px 0px 0px 0px;
 }
 
 #form
 {
-    position: relative;
+    width: 340px;
     height: auto;
-    width: 46%;
+    margin-top: 20.97px;
+    margin-right: 290px;
 
     float: right;
-}
-
-#container-form
-{
-    position: relative;
-    top: 0px;
-    left: 60px;
-    width: 340px;
-    height: 227px;
-    margin-top: 50px;
-
     opacity: 1;
 }
 
@@ -221,11 +224,9 @@ header
 
 #form-button
 {
-    position: relative;
-    top: 23px;
-    left: 60px;
     width: 340px;
     height: 39px;
+    margin: 23px 0px 91px 60px;
 
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
@@ -245,57 +246,60 @@ header
     border: 1px solid #000000;
 }
 
-#divisor-products
+#divisor-products,
+#divisor-share
 {
     position: relative;
-    top: 91px;
-    left: 289px;
-    width: 920px;
-    height: 0px;
-
-    border: 1px solid #707070;
-    opacity: 1;
-    margin: 0px 0px 0px 0px;
-}
-
-#container-title
-{
-    position: absolute;
-    z-index: 1;
-    top: 788px;
-    left: 649px;
-    width: 215px;
-    height: 40px;
-
-    background-color: white;
-}
-
-#title-divisor-products
-{
-    position: absolute;
-    z-index: 2;
-    width: 181px;
-    height: 25px;
-
+    line-height: 1em;
+    outline: 0;
+    border: 0;
+    color: black;
     text-align: center;
+    height: 1.5em;
+    opacity: .5;
+
+    margin-left: 290px !important;
+    margin-right: 290px !important;
+}
+
+#divisor-products::before,
+#divisor-share::before
+{
+    content: '';
+    background: #707070;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+#divisor-products::after,
+#divisor-share::after
+{
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    background-color: #fcfcfa;
     font: normal normal bold 18px/16px Helvetica Neue;
     letter-spacing: 0px;
-    color: #888888;
-    opacity: 1; 
-    margin: 18px 0px 0px 17px;
+    color: #050505;
+    opacity: 1;
 }
 
 #list-product
 {
-    position: relative;
-    top: 161px;
-    left: 285px;
-    width: 1000px;
+    width: 931px;
     height: auto;
+    margin-left: 285px;
 }
 
 .line-products
 {
+    width: 100%;
     height: auto;
     margin-top: 39px;
 }
@@ -312,15 +316,12 @@ header
 
 .info-produto
 {
-    position: relative;
-    top: 0px;
-    left: 0px;
     width: 201px;
-    height: 350px;
+    height: auto;
 
     display: inline-block;
     opacity: 1;
-    margin: auto 20px auto 20px;
+    margin: auto 20px auto 17px;
 }
 
 .image-product
@@ -342,11 +343,13 @@ header
     opacity: 1;
 }
 
+.name-product h4
+{
+    margin: 14px 0px 0px 0px;
+}
+
 .description-product
 {
-    width: 200px;
-    height: 60px;
-
     text-align: left;
     font: normal normal normal 12px/16px Helvetica Neue;
     letter-spacing: 0px;
@@ -356,7 +359,7 @@ header
 
 .description-product p
 {
-    margin: 0px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .old-price
@@ -368,6 +371,11 @@ header
     opacity: 1;
 }
 
+.old-price p
+{
+    margin: 0px 0px 0px 0px;
+}
+
 .new-price
 {
     text-align: left;
@@ -375,6 +383,11 @@ header
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+}
+
+.new-price p
+{
+    margin: 6px 0px 0px 0px;
 }
 
 .divided-price
@@ -386,10 +399,16 @@ header
     opacity: 1;
 }
 
+.divided-price p
+{
+    margin: 7px 0px 0px 0px;
+}
+
 .buy-button
 {
     width: 200px;
     height: 30px;
+    margin-top: 10px;
 
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
@@ -411,11 +430,9 @@ header
 
 #more-products-button
 {
-    position: relative;
-    top: 218px;
-    left: 620px;
     width: 260px;
     height: 39px;
+    margin: 51px auto 140px 620px;
 
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
@@ -434,42 +451,108 @@ header
     border: 1px solid #000000;
 }
 
-#divisor-share
+#subtitle-share
 {
-    position: relative;
-    top: 331px;
-    left: 290px;
-    width: 920px;
-    height: 0px;
+    width: 534px;
+    height: 16px;
+    margin: 54px auto auto 483px;
 
-    border: 1px solid #707070;
-    opacity: 1;
-
-    margin: 0px 0px 0px 0px;
-}
-
-#container-share-title
-{
-    position: absolute;
-    z-index: 1;
-    top: 1930px;
-    left: 649px;
-    width: 215px;
-    height: 40px;
-
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-
-#share-title
-{
-    position: absolute;
-    z-index: 2;
-
-    text-align: left;
-    font: normal normal bold 18px/16px Helvetica Neue;
+    text-align: center;
+    font: normal normal normal 14px/16px Helvetica Neue;
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
-    margin: 20px auto auto 14.49px;
+}
+
+#form-share
+{
+    width: 750px;
+    height: 51px;
+    margin: 39px auto auto 390px ;
+
+    opacity: 1;
+}
+
+.element-form-share
+{
+    display: inline-block;
+    width: 340px;
+    height: 51px;
+
+    opacity: 1;
+}
+
+.label-form-share
+{
+    width: 112px;
+    height: 14px;
+
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.textbox-form-share
+{
+    width: 340px;
+    height: 30px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#button-send-friend
+{
+    width: 260px;
+    height: 39px;
+    margin: 50px auto auto 620px;
+
+    font: normal normal normal 16px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*------------------------------------------------FOOTER-----------------------------------------*/
+
+footer
+{
+    position: relative;
+    width: 1500px;
+    height: 293px;
+    margin-top: 71.76px;
+
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+#text-footer
+{
+    width: 260px;
+    height: 50px;
+    margin: 57.24px auto auto 620px;
+
+    text-align: center;
+    font: normal normal normal 12px/18px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.skewed2
+{
+    position: relative;
+    bottom: 2px;
+    width: 100%;
+    height: 100px;
+    -webkit-transform: scaleX(-3);
+    transform: scaleX(-3);
+    transform: rotate(180deg);
 }
