@@ -1,7 +1,7 @@
 html, body
 {
     width: 420px;
-    height: 2521px;
+    height: auto;
     margin: 0px 0px 0px 0px;
 }
 
@@ -60,12 +60,19 @@ header
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
+    cursor: pointer;
 
     text-align: center;
     font: normal normal normal 14px/16px Helvetica Neue;
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+}
+
+.button-element:hover
+{
+    background: #bebebe 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
 }
 
 .skew_container  {
@@ -83,7 +90,7 @@ header
  }
  
  .skew_container .skew_bg.bg1 {
-    transform: skew(0deg, 25deg); /*THIS WILL DO THE MAGIC*/
+    transform: skew(0deg, 25deg);
  }
  
  .skew_container .skew_bg.bg1 .content {
@@ -151,6 +158,7 @@ header
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+    cursor: pointer;
 }
 
 .textbox-form
@@ -180,6 +188,7 @@ header
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+    cursor: pointer;
 }
 
 #form-button
@@ -192,11 +201,18 @@ header
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
+    cursor: pointer;
 
     font: normal normal normal 16px/16px Helvetica Neue;
     letter-spacing: 0px;
     color: #888888;
     opacity: 1
+}
+
+#form-button:hover
+{
+    background: #bebebe 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
 }
 
 #divisor-products,
@@ -339,12 +355,19 @@ header
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
+    cursor: pointer;
 
     text-align: center;
     font: normal normal normal 16px/16px Helvetica Neue;
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+}
+
+.buy-button:hover
+{
+    background: #bebebe 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
 }
 
 #more-products-button
@@ -357,11 +380,18 @@ header
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
+    cursor: pointer;
 
     font: normal normal normal 16px/16px Helvetica Neue;
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+}
+
+#more-products-button:hover
+{
+    background: #bebebe 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
 }
 
 #subtitle-share
@@ -397,6 +427,7 @@ header
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+    cursor: pointer;
 }
 
 .textbox-form-share
@@ -407,6 +438,19 @@ header
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
+    outline: none;
+}
+
+#name-friend:focus:valid,
+#email-friend:focus:valid
+{
+    border: 2px solid green;
+}
+
+#name-friend:focus:invalid,
+#email-friend:focus:invalid
+{
+    border: 2px solid red;
 }
 
 #button-send-friend
@@ -419,15 +463,24 @@ header
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
+    cursor: pointer;
 
     font: normal normal normal 16px/16px Helvetica Neue;
     letter-spacing: 0px;
     color: #888888;
 }
 
+
+#button-send-friend:hover
+{
+    background: #bebebe 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+}
+
 /*------------------------------------------FOOTER-----------------------------------------------------------*/
 footer
 {
+    position: relative;
     width: 420px;
     height: 158px;
 }
@@ -440,16 +493,54 @@ footer
  }
  
  .skew_container2 .skew_bg2 {
-    height: 100px;
+    position: relative;
+    top: 70px;
+    height: 150px;
     background: #707070 0% 0% no-repeat padding-box;
     text-align: center;
     margin-top: -9%;
  }
  
  .skew_container2 .skew_bg2.bg2 {
-    transform: skew(-5deg, -10deg); /*THIS WILL DO THE MAGIC*/
+    transform: skew(0deg, -5deg);
+    transform: rotate(175deg);
  }
  
  .skew_container2 .skew_bg2.bg2 .content2 {
-    transform: skew(5deg, 10deg);
+    transform: skew(0deg, 5deg);
+    transform: rotate(-175deg);
+ }
+
+ .rectangle-fill-skew2
+ {
+    position: absolute;
+    z-index: -1;
+    height: 88px;
+    width: 420px;
+    margin-top: 70px;
+    background: #707070 0% 0% no-repeat padding-box;
+ }
+
+ .rectangle-fill-skew3
+ {
+    position: absolute;
+    z-index: -1;
+    height: 100px;
+    width: 5%;
+    right: 0px;
+    margin-top: 15px;
+    background: #707070 0% 0% no-repeat padding-box;
+ }
+
+ #text-footer
+ {
+    position: absolute;
+    bottom: 36px;
+    margin-left: 80px;
+
+    text-align: center;
+    font: normal normal normal 12px/18px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
  }
