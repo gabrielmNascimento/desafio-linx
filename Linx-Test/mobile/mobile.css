@@ -1,0 +1,455 @@
+html, body
+{
+    width: 420px;
+    height: 2521px;
+    margin: 0px 0px 0px 0px;
+}
+
+/*--------------------------------------------HEADER--------------------------------------------------*/
+
+header
+{
+    width: 421px;
+    height: 398px;
+
+    /*background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;*/
+}
+
+.text-element
+{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.text-element:first-child
+{
+    font: normal normal normal 20px/24px Helvetica Neue;
+    margin: 66px 0px 0px 16px;
+}
+
+.text-element:nth-child(2)
+{
+    font: normal normal bold 40px/49px Helvetica Neue;
+    margin: 0px 0px 0px 16px;
+}
+
+.text-element:nth-child(3)
+{
+    font: normal normal normal 14px/16px Helvetica Neue;
+    margin: 9px 0px 0px 16px;
+}
+
+#container-buttons-header
+{
+    width: 345px;
+    height: 111px;
+    margin: 56px auto auto 38px;
+}
+
+.button-element
+{
+    width: 160px;
+    height: 40px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+
+    text-align: center;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.skew_container  {
+    max-width: 500px;
+    margin: auto auto;
+    overflow: hidden;
+    height: 100%;
+ }
+ 
+ .skew_container .skew_bg {
+    height: 270px;
+    background: #707070 0% 0% no-repeat padding-box;
+    text-align: center;
+    margin-top: -9%;
+ }
+ 
+ .skew_container .skew_bg.bg1 {
+    transform: skew(0deg, 25deg); /*THIS WILL DO THE MAGIC*/
+ }
+ 
+ .skew_container .skew_bg.bg1 .content {
+    transform: skew(0deg, -25deg);
+ }
+
+ .rectangle-fill-skew
+ {
+    position: absolute;
+    z-index: -1;
+    height: 200px;
+    width: 421px;
+
+    background: #707070 0% 0% no-repeat padding-box;
+ }
+
+ /*---------------------------------------------SECTION--------------------------------------------------------*/
+
+ #title-text-form
+ {
+    margin: 29.11px 0px 0px 16px;
+
+    text-align: left;
+    font: normal normal normal 20px/24px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+ }
+
+#body-text-form
+{
+    margin: 17px 0px 0px 16px;
+
+    text-align: left;
+    font: normal normal normal 12px/18px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+#form
+{
+    width: 385px;
+    height: auto;
+    margin: 30px auto auto 17px;
+}
+
+.element-label-input
+{
+    width: 385px;
+    height: 51px;
+    margin-bottom: 20px;
+}
+
+.element-label-input:last-child
+{
+    width: 203px;
+    height: 14px;
+}
+
+.label-form
+{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.textbox-form
+{
+    width: 385px;
+    height: 30px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.gender-button
+{
+    width: 14px;
+    height: 14px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.label-gender
+{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+#form-button
+{
+    width: 383px;
+    height: 39px;
+    margin: 0px auto 103px 19px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+
+    font: normal normal normal 16px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1
+}
+
+#divisor-products,
+#divisor-share
+{
+    position: relative;
+    line-height: 1em;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+
+#divisor-products::before,
+#divisor-share::before
+{
+    content: '';
+    background: #707070;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+#divisor-products::after,
+#divisor-share::after
+{
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    background-color: #fcfcfa;
+    font: normal normal bold 18px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #050505;
+    opacity: 1;
+}
+
+#list-product
+{
+    width: 403px;
+    height: auto;
+    margin: 33px auto auto 9px;
+}
+
+.info-product
+{
+    width: 392px;
+    height: 129px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.image-product
+{
+    width: 169px;
+    height: 129px;
+    float: left;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.about-price
+{
+    width: 200px;
+    height: 129px;
+    float: right;
+}
+
+.name-product
+{
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.name-product h4
+{
+    margin: 0px 0px 0px 0px;
+}
+
+.old-price
+{
+    text-align: left;
+    font: normal normal normal 12px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.old-price p
+{
+    margin: 13px 0px 0px 0px;
+}
+
+.new-price
+{
+    text-align: left;
+    font: normal normal bold 16px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.new-price p
+{
+    margin: 6px 0px 0px 0px;
+}
+
+.divided-price
+{
+    text-align: left;
+    font: normal normal normal 12px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.divided-price p
+{
+    margin: 7px 0px 0px 0px;
+}
+
+.buy-button
+{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+
+    text-align: center;
+    font: normal normal normal 16px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+#more-products-button
+{
+    width: 260px;
+    height: 39px;
+    margin: 38px auto 141px 80px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+
+    font: normal normal normal 16px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+#subtitle-share
+{
+    margin: 38px auto auto 17px;
+
+    text-align: center;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+#form-share
+{
+    margin: 28px auto auto 9px;
+
+    width: 403px;
+    height: 136px;
+}
+
+.element-form-share
+{
+    width: auto;
+    height: 51px;
+    margin-bottom: 20px;
+}
+
+.label-form-share
+{
+    text-align: left;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.textbox-form-share
+{
+    width: 391px;
+    height: 30px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+#button-send-friend
+{
+    width: 260px;
+    height: 39px;
+    margin: 28px auto 85px 80px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+
+    font: normal normal normal 16px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+}
+
+/*------------------------------------------FOOTER-----------------------------------------------------------*/
+footer
+{
+    width: 420px;
+    height: 158px;
+}
+
+.skew_container2{
+    max-width: 500px;
+    margin: auto auto;
+    overflow: hidden;
+    height: 100%;
+ }
+ 
+ .skew_container2 .skew_bg2 {
+    height: 100px;
+    background: #707070 0% 0% no-repeat padding-box;
+    text-align: center;
+    margin-top: -9%;
+ }
+ 
+ .skew_container2 .skew_bg2.bg2 {
+    transform: skew(-5deg, -10deg); /*THIS WILL DO THE MAGIC*/
+ }
+ 
+ .skew_container2 .skew_bg2.bg2 .content2 {
+    transform: skew(5deg, 10deg);
+ }

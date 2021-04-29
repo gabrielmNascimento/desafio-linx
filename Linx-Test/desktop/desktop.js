@@ -11,7 +11,7 @@ async function getApi(url){
     show(data);
 }
 
-//Mostrando produtos
+//Showing products
 function show(data){
     for(i = 0; i < data.products.length; i++)
     {
