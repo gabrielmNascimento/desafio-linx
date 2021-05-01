@@ -17,18 +17,22 @@ async function getApi(url){
 //Showing products
 function show(data){
 
-    const productShowing = data.products.length / 2
+    const productShowing = data.products.length / 4
 
     for(i = flag; i < (flag + productShowing); i++)
     {
         let showProduct =
-        `<div class="info-product">
-            <div class="image-product">
-                <img src="${data.products[i].image}" alt="">
-            </div>
-            <div class="about-price">
+        `
+        <div class="info-product">
+
+                <div class="image-product">
+                    <img src="${data.products[i].image}" alt="">
+                </div>
                 <div class="name-product">
                     <h4>${data.products[i].name}</h4>
+                </div>
+                <div class="description-product">
+                    <p>${data.products[i].description}</p>
                 </div>
                 <div class="old-price">
                     <p>De: R$${data.products[i].oldPrice}</p>
@@ -41,15 +45,16 @@ function show(data){
                 </div>
 
                 <button class="buy-button">Comprar</button>
-            </div>
-        </div>`
+        </div>
+        `
 
         document.getElementById('list-product').innerHTML += showProduct;
     }
-
+    
     flag += productShowing;
 
-    if(flag == data.products.length){
+    if(flag == data.products.length)
+    {
         apiProducts_url = `https://${data.nextPage}`;
         flag = 0;
     }
@@ -57,17 +62,3 @@ function show(data){
 
 //Calling function when pages load:
 console.log(getApi(apiProducts_url));
-
-
-
-/*Checking if the name has only white spaces, with email we don't need because submit would block if the value in
-text box doesn't correspond to the type of the input.*/
-function checkNameFriend(){
-
-    const nameBox = document.getElementById('name-friend').value;
-
-    if (!nameBox.replace(/\s/g, '').length) {
-        alert("Insira um nome por gentileza");
-        return false;
-    }
-}

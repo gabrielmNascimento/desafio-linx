@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-mail Produtos</title>
     <link rel="stylesheet" href="email.css">
+    <script src="email.js"></script>
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
         </p>
 
         <div id="list-product">
-            <div class="info-product">
+            <!--<div class="info-product">
 
                 <div class="image-product">
                     <img src="" alt="">
@@ -77,10 +78,10 @@
                 </div>
 
                 <button class="buy-button">Comprar</button>
-            </div>
+            </div>-->
         </div>
 
-        <button id="more-products-button">Tem muito mais aqui. Vem ver!</button>
+        <button id="more-products-button" onclick="getApi(apiProducts_url)">Tem muito mais aqui. Vem ver!</button>
 
     </section>
     <footer>

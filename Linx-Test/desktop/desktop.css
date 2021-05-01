@@ -8,6 +8,7 @@
 
 html, body
 {
+    width: 1500px;
     min-width: fit-content;
     height: auto;
     margin: 0px 0px 0px 0px;
@@ -17,64 +18,44 @@ html, body
 
 header
 {
-    position: static;
+    position: relative;
     height: 399px;
-    width: 1500px;
-    background: #707070 0% 0% no-repeat padding-box;
+    width: 100%;
+    /*background: #707070 0% 0% no-repeat padding-box;*/
 }
 
 .text-element
 {
+    text-align: left;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-
-    margin: 0px 0px 0px 0px;
 }
 
 .text-element:first-child
 {
-    position: absolute;
-    top: 69px;
-    left: 635px;
-    width: 227px;
-    height: 23px;
-
-    text-align: left;
     font: normal normal normal 20px/24px Helvetica Neue;
+    padding-top: 204px;
+    margin: 0px 0px 0px 634px;
 }
 
 .text-element:nth-child(2)
 {
-    position: absolute;
-    top: 92px;
-    left: 571px;
-    width: 358px;
-    height: 48px;
-
-    text-align: center;
     font: normal normal bold 40px/49px Helvetica Neue;
+    margin: 0px 0px 0px 571px;
 }
 
 .text-element:nth-child(3)
 {
-    position: absolute;
-    top: 164px;
-    left: 476px;
-    width: 548px;
-    height: 16px;
-
-    text-align: center;
     font: normal normal normal 14px/16px Helvetica Neue;
+    margin: 24px 0px 0px 476px;
 }
 
 #container-buttons-header
 {
-    position: absolute;
-    top: 230px;
-    left: 371px;
     width: 780px;
     height: 50px;
+    margin: 50px 0px 0px 371px;
 
     opacity: 1;
 
@@ -106,17 +87,28 @@ header
     background: #ffffffb2 0% 0% no-repeat padding-box;
 }
 
-.skewed
-{
-    position: relative;
-    top: 299px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
+.skew_container  {
+    max-width: 100%;
+    margin: auto auto;
+    overflow: hidden;
+    height: 100%;
+ }
+ 
+ .skew_container .skew_bg {
+    height: 450px;
+    background: #707070 0% 0% no-repeat padding-box;
+    text-align: center;
+    margin-top: -9%;
+ }
+ 
+ .skew_container .skew_bg.bg1 {
+    transform: skew(0deg, 5deg);
+    transform-origin: bottom;
+ }
+ 
+ .skew_container .skew_bg.bg1 .content {
+    transform: skew(0deg, -5deg);
+ }
 
 /*------------------------------------------------------SECTION----------------------------------------------*/
 section
@@ -298,7 +290,7 @@ section
     margin-left: 285px;
 }
 
-.info-produto
+.info-product
 {
     width: 201px;
     height: auto;
@@ -308,17 +300,17 @@ section
     margin: 39px 20px auto 20px;
 }
 
-.info-produto:first-child
+.info-product:first-child
 {
     margin-left: 0px;
 }
 
-.info-produto:nth-child(4n + 1)
+.info-product:nth-child(4n + 1)
 {
     margin-left: 0px;
 }
 
-.info-produto:nth-child(4n)
+.info-product:nth-child(4n)
 {
     margin-right: 0px;
 }
@@ -521,7 +513,12 @@ section
 {
     width: 260px;
     height: 39px;
-    margin: 50px auto auto 620px;
+    margin: 50px auto 71.76px 620px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
 
     font: normal normal normal 16px/16px Helvetica Neue;
     letter-spacing: 0px;
@@ -530,40 +527,68 @@ section
     cursor: pointer;
 }
 
+#button-send-friend:hover
+{
+    background: #d8d8d8 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+}
+
 /*------------------------------------------------FOOTER-----------------------------------------*/
 
 footer
 {
     position: relative;
-    width: 1500px;
-    height: 293px;
-    margin-top: 71.76px;
+    width: 100%;
+    height: 293.24px;
 
-    background: #707070 0% 0% no-repeat padding-box;
+    /*background: #707070 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
-    opacity: 1;
+    opacity: 1;*/
 }
 
-#text-footer
+.rectangle-fill-skew2
 {
-    width: 260px;
-    height: 50px;
-    margin: 57.24px auto auto 620px;
+    position: absolute;
+    z-index: -1;
+    height: 150px;
+    width: 100%;
+    margin-top: 143.23px;
+    background: #707070 0% 0% no-repeat padding-box;
+
+}
+
+.skew_container2{
+    max-width: 100%;
+    margin: auto auto;
+    overflow: hidden;
+    height: 100%;
+ }
+ 
+ .skew_container2 .skew_bg2 {
+    position: absolute;
+    top: 70px;
+    height: 150px;
+    width: 100%;
+    background: #707070 0% 0% no-repeat padding-box;
+    text-align: center;
+    margin-top: 10px;
+ }
+ 
+ .skew_container2 .skew_bg2.bg2 {
+    transform: skew(0deg, -3deg);
+ }
+ 
+ .skew_container2 .skew_bg2.bg2 .content2 {
+    transform: skew(0deg, 3deg);
+ }
+
+ #text-footer
+ {
+    padding-top: 40px;
 
     text-align: center;
     font: normal normal normal 12px/18px Helvetica Neue;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-}
-
-.skewed2
-{
-    position: relative;
-    bottom: 2px;
-    width: 100%;
-    height: 100px;
-    -webkit-transform: scaleX(-3);
-    transform: scaleX(-3);
-    transform: rotate(180deg);
-}
+ }

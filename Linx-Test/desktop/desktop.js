@@ -16,7 +16,7 @@ function show(data){
     for(i = 0; i < data.products.length; i++)
     {
         let showProduct =
-        `<div class="info-produto">
+        `<div class="info-product">
             <div class="image-product">
                 <img src="${data.products[i].image}" alt="" width="200px" height="150px">
             </div>

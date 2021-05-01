@@ -282,6 +282,12 @@ header
     opacity: 1;
 }
 
+.image-product img
+{
+    width: 100%;
+    height: 100%;
+}
+
 .about-price
 {
     width: 200px;
